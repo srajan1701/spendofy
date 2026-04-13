@@ -1,0 +1,14 @@
+.addtx-form  {
+    background:var(--card);
+    padding:12px;
+    border-radius:10px
+}
+.addtx-row {
+    display:flex;
+    gap:8px
+}
+.input {
+    padding:8px;
+    border:1px solid var(--border);
+    border-radius:8px
+}

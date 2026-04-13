@@ -1,0 +1,126 @@
+/* ===== GRID (TOP CARDS) ===== */
+.overview-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-bottom:20px;
+}
+
+
+/* ===== CHART GRID ===== */
+.overview-charts{
+  display:grid;
+  grid-template-columns:2fr 1fr; 
+  gap:16px;
+  margin-bottom:16px;
+}
+
+/* second row ke liye bhi same layout */
+.overview-charts .card{
+  width:100%;
+}
+
+  /* Auto responsive cards */
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+  gap:16px;
+  margin-bottom:16px;
+}
+
+
+/* ===== CARD STYLE IMPROVEMENT ===== */
+.card{
+  background:#fff;
+  border-radius:16px;
+  padding:16px;
+  transition:0.25s;
+}
+
+.card-shadow{
+  box-shadow:0 4px 20px rgba(0,0,0,0.06);
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+
+/* ===== HEADINGS ===== */
+.card h4{
+  margin:0 0 12px 0;
+  font-size:16px;
+  font-weight:600;
+}
+
+
+/* ===== TABLE ===== */
+.table-card{
+  margin-top:20px;
+  padding:16px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+thead tr{
+  color:var(--muted);
+  border-bottom:1px solid var(--border);
+}
+
+th,td{
+  padding:10px;
+  text-align:center;
+}
+
+th:first-child,
+td:first-child{
+  text-align:left;
+}
+
+tbody tr{
+  border-top:1px dashed var(--border);
+  transition:0.2s;
+}
+
+tbody tr:hover{
+  background:#f9fafb;
+}
+
+
+/* ===== EMPTY STATE ===== */
+.empty{
+  padding:20px;
+  text-align:center;
+  color:var(--muted);
+}
+
+
+/* ===== SMALL TEXT ===== */
+.small{
+  text-align:center;
+  color:var(--muted);
+  padding:20px;
+}
+
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:1000px){
+  .overview-charts{
+    grid-template-columns:1fr;
+  }
+}
+
+.dark{ 
+  --bg:#081226; 
+  --card:#071029; 
+  --muted:#9aaaba; 
+  --accent:#38bdf8; 
+  --accent-600:#0891b2; 
+  --sidebar:#041426; 
+  --border:#0b2a3a; 
+  color:#e8f6ff;
+ }

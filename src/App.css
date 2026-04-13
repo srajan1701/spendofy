@@ -1,0 +1,51 @@
+/* Apply to html and body to take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main wrapper for the entire app */
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The main content that grows */
+.app-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .app-content {
+    padding: 15px;
+  }
+
+  #root {
+    flex-direction: column;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .app-content {
+    padding: 10px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Large screens (1200px and above) */
+@media (min-width: 1200px) {
+  .app-content {
+    max-width: 1200px;
+    margin: auto;
+  }
+}

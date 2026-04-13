@@ -1,0 +1,176 @@
+/* ---------------- FINANCE OVERVIEW SECTION ---------------- */
+.finance-overview-section {
+  padding: 70px 0;
+  background-color: #ffffff;
+  margin-top: 6px;
+}
+
+.finance-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* LEFT: Mobile mockup image */
+.finance-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.finance-image-mobile {
+  width: 200px;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* RIGHT: Text + Desktop Image */
+.finance-right {
+  flex: 1.2;
+  text-align: center;
+}
+
+.finance-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.finance-subtitle {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.finance-text {
+  font-size: 1rem;
+   color: #333;
+  line-height: 1.7;
+  margin: 20px auto;
+  max-width: 550px;
+}
+
+/* Desktop image */
+.finance-image-desktop {
+  width: 600px;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+}
+
+
+.accounts-sync-section {
+  background-color: #e9f3fb;
+  padding: 100px 0;
+  margin-top: 0px;
+}
+
+.accounts-sync-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.accounts-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.circle-bg {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  animation: float 6s ease-in-out infinite;
+}
+
+
+.multi-gradient {
+  background: radial-gradient(
+    circle at 30% 30%,
+    #8ec5fc 0%,
+    #e0c3fc 40%,
+    #a1ffce 70%,
+    #f9f9f9 100%
+  );
+}
+
+.accounts-image {
+  width: 190px;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.accounts-right {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.accounts-title {
+  font-size: 2rem;
+  color: #0a2540;
+  margin-bottom: 15px;
+}
+
+.accounts-text {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.accounts-link a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.accounts-link a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .finance-container,
+  .accounts-sync-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .accounts-right {
+    text-align: center;
+  }
+}
+.third{
+  margin-left:46px;
+   margin-top:43px;
+}

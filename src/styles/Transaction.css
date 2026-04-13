@@ -1,0 +1,220 @@
+.transactions-page{
+  display:flex;
+  gap:20px;
+  padding:20px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* FILTER */
+.transactions-filter{
+  width:220px;
+  background: var(--card);
+  padding:15px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  backdrop-filter: blur(10px);
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+/* MAIN */
+.transactions-main{
+  flex:1;
+}
+
+/* HEADER */
+.transactions-header{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:10px;
+}
+
+.month-arrow{
+  border:none;
+  background: var(--card);
+  color: var(--text);
+  padding:6px 10px;
+  cursor:pointer;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.month-arrow:hover{
+  background: var(--accent);
+  color:#fff;
+}
+
+/* LIST */
+.transactions-list{
+  background: var(--card);
+  padding:10px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+
+/* ROW */
+.transaction-row{
+  display:flex;
+  justify-content:space-between;
+  padding:10px;
+  border-bottom:1px solid var(--border);
+}
+
+.left{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.circle{
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  background: var(--border);
+}
+
+/* AMOUNT */
+.amount-red{
+  color:#ef4444;
+  font-weight:600;
+}
+
+.amount-green{
+  color:#22c55e;
+  font-weight:600;
+}
+
+/* FLOAT BUTTONS */
+.floating-buttons{
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.plus{
+  background: linear-gradient(135deg,#22c55e,#16a34a);
+  color:white;
+  border:none;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  font-size:22px;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.minus{
+  background: linear-gradient(135deg,#ef4444,#dc2626);
+  color:white;
+  border:none;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  font-size:22px;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* MODAL */
+.modal{
+  position:fixed !important;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.6);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:999999;
+}
+
+.modal > div{
+  background: var(--card);
+  padding:25px;
+  width:500px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  backdrop-filter: blur(12px);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.modal h2{
+  text-align:center;
+}
+
+.modal input,
+.modal select{
+  background: var(--card);
+  border:1px solid var(--border);
+  color: var(--text);
+  padding:10px;
+  border-radius:8px;
+}
+
+/* BUTTONS */
+.buttons{
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+}
+
+.buttons button{
+  padding:8px 16px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.buttons button:first-child{
+  background: var(--border);
+  color: var(--text);
+}
+
+.buttons button:last-child{
+  background: var(--accent);
+  color:white;
+}
+
+.page-form{
+  max-width:500px;
+  margin:40px auto;
+  background:white;
+}
+
+/* FORM PAGE */
+.page-form{
+  max-width:500px;
+  margin:40px auto;
+  background: var(--card);
+  padding:25px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  backdrop-filter: blur(12px);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+/* DELETE BTN */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #ef4444;
+}

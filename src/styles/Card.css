@@ -1,0 +1,9 @@
+.card {
+    background:var(--card);
+    padding:14px;
+    border-radius:12px;
+    min-height:88px;
+    display:flex;
+    flex-direction:column;j
+    ustify-content:center
+}

@@ -1,0 +1,143 @@
+/* ===== WRAPPER ===== */
+.import-export-page {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ===== CARD ===== */
+.import-export-page .card {
+  width: 100%;
+  max-width: 550px;
+  background: var(--card);
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  transition: 0.3s ease;
+}
+
+.import-export-page .card:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== TITLE ===== */
+.import-export-page .title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text);
+  letter-spacing: 0.5px;
+}
+
+/* ===== INPUT + SELECT ===== */
+.import-export-page .input,
+.import-export-page .select {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 14px;
+  background: var(--card);
+  color: var(--text);
+  font-size: 14px;
+  transition: 0.25s ease;
+}
+
+.import-export-page .input::placeholder {
+  color: var(--muted);
+}
+
+/* ===== FOCUS ===== */
+.import-export-page .input:focus,
+.import-export-page .select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(56,189,248,0.2);
+}
+
+/* ===== BUTTON ===== */
+.import-export-page .btn {
+  width: 100%;
+  background: linear-gradient(135deg,var(--accent),var(--accent-600));
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.import-export-page .btn:hover {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.import-export-page .btn:active {
+  transform: scale(0.98);
+}
+
+/* ===== SMALL TEXT ===== */
+.import-export-page .hint {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .import-export-page {
+    padding: 20px 15px;
+  }
+
+  .import-export-page .card {
+    padding: 20px;
+  }
+
+  .import-export-page .title {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .import-export-page {
+    padding: 15px 10px;
+  }
+
+  .import-export-page .card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .import-export-page .title {
+    font-size: 18px;
+  }
+
+  .import-export-page .input,
+  .import-export-page .select {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .import-export-page .btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+/* Extra small */
+@media (max-width: 350px) {
+  .import-export-page .title {
+    font-size: 16px;
+  }
+}

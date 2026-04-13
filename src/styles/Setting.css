@@ -1,0 +1,139 @@
+/* ===== PAGE ===== */
+.settings-page {
+  background: var(--bg);
+  min-height: 100vh;
+  padding: 20px;
+  color: var(--text);
+}
+
+/* ===== TOPBAR ===== */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text);
+  padding: 10px 16px;
+  border-radius: 10px;
+  position: relative;
+  top: unset;
+  z-index: auto;
+}
+
+/* EXIT BUTTON */
+.exit-btn {
+  background: var(--card);
+  color: var(--accent);
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.exit-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ===== SETTINGS CARD ===== */
+.settings-card {
+  margin-top: 20px;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
+/* ===== ROW ===== */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0;
+  gap: 10px;
+}
+
+.row label {
+  flex: 1;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.row select {
+  flex: 1;
+  padding: 6px 10px;
+  margin: 0 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+}
+
+/* ROW BUTTON */
+.row button {
+  background: linear-gradient(135deg,var(--accent),var(--accent-600));
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.row button:hover {
+  transform: scale(1.05);
+}
+
+/* ===== TOGGLE ROW ===== */
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+ margin: 12px 10px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+/* ===== SAVE BUTTON ===== */
+.save-all {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg,var(--accent),var(--accent-600));
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-all:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .row select {
+    margin: 8px 0;
+  }
+
+  .topbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .exit-btn {
+    width: 100%;
+  }
+
+  .save-all {
+    width: 100%;
+  }
+}
