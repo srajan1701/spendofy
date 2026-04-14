@@ -10,7 +10,7 @@ export default function FinanceOverview() {
         <div className="finance-left">
         <div className="circle-bg multi-gradient">
           <img
-            src="/src/assets/firstimage.png"
+            src="/firstimage.png"
             alt="Finance mobile dashboard"
             className="finance-image-mobile"
           />
@@ -31,7 +31,7 @@ export default function FinanceOverview() {
           </p>
 
           <img
-            src="/src/assets/first.png"  
+            src="/first.png"  
             alt="Finance desktop dashboard"
             className="finance-image-desktop"
           />
@@ -46,7 +46,7 @@ export default function FinanceOverview() {
           <div className="accounts-left">
             <div className="circle-bg multi-gradient">
               <img
-                src="/src/assets/secondimage.png" 
+                src="/secondimage.png" 
                 alt="Accounts sync mobile view"
                 className="accounts-image"
               />
@@ -81,7 +81,7 @@ export default function FinanceOverview() {
         <div className="finance-left third">
         <div className="circle-bg multi-gradient">
           <img
-            src="/src/assets/thirdimage.png"
+            src="/thirdimage.png"
             alt="Finance mobile dashboard"
             className="finance-image-mobile"
           />
